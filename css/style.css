@@ -232,9 +232,9 @@ body {
   border-radius: 100px;
 }
 
-/* .btn:not(:hover) {
- animation: buttonNotHover 0.5s;
-} */
+.btn:not(:hover) {
+  animation: buttonNotHover 0.7s;
+}
 
 .btn-white::after {
   background-color: #fff;
