@@ -53,6 +53,7 @@ body {
 
 .header__logo {
   height: 3.5rem;
+  animation: moveInBottom 1s 0.8s backwards;
 }
 
 .header__logo:hover {
