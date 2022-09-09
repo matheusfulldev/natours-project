@@ -1,2 +1,2 @@
 # natours-project
- project using advanced CSS3 - not finished yet
+ Project using advanced CSS3 - not finished yet
