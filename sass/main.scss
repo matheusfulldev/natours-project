@@ -206,15 +206,15 @@ body {
     z-index: 1;
 
     transition: all 0.2s;
-
-    &--animated {
-      animation: moveInBottom 0.8s ease-out 0.75s;
-      animation-fill-mode: backwards;
-    }
   
-      &:active {
-        box-shadow: 0rem 0.5rem 0.8rem rgba($color-black, 0.2);
-        animation: buttonActive 0.16s forwards;
+    &:active {
+      box-shadow: 0rem 0.5rem 0.8rem rgba($color-black, 0.2);
+      animation: buttonActive 0.16s forwards;
+  }
+}
+  &--animated {
+    animation: moveInBottom 0.8s ease-out 0.75s;
+    animation-fill-mode: backwards;
   }
 
   &::after {
@@ -233,13 +233,13 @@ body {
 
   &:hover {
     animation-name: buttonOnHover;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
     animation-delay: 0ms;
     animation-fill-mode: forwards;
     box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
-      transform: scaleX(1.25) scaleY(1.3);
+      transform: scaleX(1.25) scaleY(1.34);
       opacity: 0;
     }
   }
@@ -252,7 +252,6 @@ body {
       background-color: $color-white;
     }
   }
-}
 }
 
 
