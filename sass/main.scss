@@ -126,8 +126,7 @@ body {
   }
 }
   &--animated {
-    animation: moveInBottom 0.8s ease-out 0.75s;
-    animation-fill-mode: backwards;
+    animation: moveInBottom 0.8s ease-out 0.75s 1 backwards;
   }
 
   &::after {
@@ -145,10 +144,7 @@ body {
   }
 
   &:hover {
-    animation-name: buttonOnHover;
-    animation-duration: 0.2s;
-    animation-delay: 0ms;
-    animation-fill-mode: forwards;
+    animation: buttonOnHover 0.2s 0ms forwards;
     box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
 
     &::after {

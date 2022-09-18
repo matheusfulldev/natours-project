@@ -88,8 +88,7 @@ body {
     animation: buttonActive 0.16s forwards; }
 
 .btn--animated {
-  animation: moveInBottom 0.8s ease-out 0.75s;
-  animation-fill-mode: backwards; }
+  animation: moveInBottom 0.8s ease-out 0.75s 1 backwards; }
 
 .btn::after {
   content: "";
@@ -104,10 +103,7 @@ body {
   border-radius: 10rem; }
 
 .btn:hover {
-  animation-name: buttonOnHover;
-  animation-duration: 0.2s;
-  animation-delay: 0ms;
-  animation-fill-mode: forwards;
+  animation: buttonOnHover 0.2s 0ms forwards;
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.25) scaleY(1.34);
