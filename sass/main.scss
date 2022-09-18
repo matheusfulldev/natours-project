@@ -56,11 +56,14 @@ body {
 
   &__logo {
     height: 3.5rem;
-    animation: moveInBottom 1s 0.8s backwards;
+  }
+
+  &__logo--animated {
+    animation: moveInBottom 1s 0.8s 1 backwards;;
   }
 
   &__logo:hover {
-    animation: logoFlipping 1.7s 1;
+    animation: logoFlipping 1.7s 1 forwards;
   }
   
   &__text-box {
@@ -183,11 +186,17 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
+    pointer-events: none;
     transform: translateY(15rem);
+  }
+
+  99% {
+    pointer-events: none;
   }
 
   100% {
     opacity: 1;
+    pointer-events: all;
     transform: translateY(0rem);
   }
 }
@@ -196,16 +205,16 @@ body {
 
   &:link,
   &:visited {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 1.5rem 4rem;
+    padding: 1.4rem 4rem;
     border-radius: 10rem;
     position: relative;
     z-index: 1;
 
-    transition: all 0.2s;
+    transition: all 0.3s;
   
     &:active {
       box-shadow: 0rem 0.5rem 0.8rem rgba($color-black, 0.2);
