@@ -196,3 +196,8 @@ body {
     animation: moveInBottom 1s 0.8s 1 backwards; }
   .header__logo:hover {
     animation: logoFlipping 1.7s 1 forwards; }
+
+.section-about {
+  background-color: #c0c0c0;
+  padding: 25rem;
+  margin-top: -20vh; }
