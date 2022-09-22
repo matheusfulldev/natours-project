@@ -104,17 +104,25 @@ body {
     animation-timing-function: ease; }
 
 .heading-secondary {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .25rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  transition: all .2s;
+  background-image: linear-gradient(to right, #68b959, #24a077);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
+  .heading-secondary:hover {
+    transform: skew(7deg, 3deg);
+    cursor: default; }
 
 .u-text-center {
   text-align: center; }
+
+.u-negative-mt-12 {
+  margin-top: -12rem; }
 
 .btn:link, .btn:visited {
   font-size: 1.4rem;
@@ -211,6 +219,6 @@ body {
     animation: logoFlipping 1.7s 1 forwards; }
 
 .section-about {
-  background-color: #c0c0c0;
+  background-color: #ececec;
   padding: 25rem;
   margin-top: -20vh; }
