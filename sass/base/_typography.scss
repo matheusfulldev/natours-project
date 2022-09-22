@@ -37,12 +37,12 @@ body {
   }
 
   .heading-secondary {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .25rem;
     display: inline-block;
-    transition: all .2s;
+    transition: all .3s;
 
     background-image: linear-gradient(to right,
     $color-primary-light, $color-primary-dark
@@ -52,7 +52,8 @@ body {
     color: transparent;
 
     &:hover {
-      transform: skew(7deg, 3deg);
+      transform: skew(7deg, 3deg) scale(1.2);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, .17);
       cursor: default;
     }
   }
