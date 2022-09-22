@@ -36,4 +36,18 @@ body {
     }
   }
 
+  .heading-secondary {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    display: inline-block;
+
+    background-image: linear-gradient(to right,
+    $color-primary-light, $color-primary-dark
+    );
+    -webkit-background-clip: text;  
+    color: transparent;
+  }
+
 
