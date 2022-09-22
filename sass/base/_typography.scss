@@ -37,7 +37,7 @@ body {
   }
 
   .heading-secondary {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -52,10 +52,26 @@ body {
     color: transparent;
 
     &:hover {
-      transform: skew(7deg, 3deg) scale(1.2);
+      transform: skew(10deg, 3deg) scale(1.1);
       text-shadow: .5rem 1rem 2rem rgba($color-black, .17);
       cursor: default;
     }
   }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+  font-size: $default-size;
+  line-height: 1.7;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
 
 

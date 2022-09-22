@@ -104,7 +104,7 @@ body {
     animation-timing-function: ease; }
 
 .heading-secondary {
-  font-size: 2.6rem;
+  font-size: 3.6rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .25rem;
@@ -115,9 +115,20 @@ body {
   -webkit-background-clip: text;
   color: transparent; }
   .heading-secondary:hover {
-    transform: skew(7deg, 3deg) scale(1.2);
+    transform: skew(10deg, 3deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.17);
     cursor: default; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.7; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 2rem; }
 
 .u-text-center {
   text-align: center; }
@@ -125,7 +136,13 @@ body {
 .u-negative-mt-12 {
   margin-top: -8rem; }
 
-.u-mb-8 {
+.u-mb-sm {
+  margin-bottom: 1.5rem; }
+
+.u-mb-md {
+  margin-bottom: 4rem; }
+
+.u-mb-bg {
   margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
@@ -169,6 +186,25 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #55c57a;
+  text-decoration: none;
+  transition: all .3s;
+  padding: .5rem;
+  border-bottom: 1px solid #55c57a; }
+
+.btn-text:hover {
+  transform: translateY(-3px);
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn-text:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.1); }
 
 .row {
   max-width: 114rem;
@@ -222,5 +258,5 @@ body {
 
 .section-about {
   background-color: #ececec;
-  padding: 25rem;
+  padding: 25rem 0rem;
   margin-top: -20vh; }
