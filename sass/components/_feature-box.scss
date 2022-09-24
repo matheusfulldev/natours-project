@@ -1,11 +1,36 @@
 .feature-box {
+    padding: 6rem .3px;
+    border-radius: .4rem;
+    background-color: $color-white;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
 
+    text-align: center;
+    transition: all .34s;
+    
     &__icon {
         font-size: 6rem;
+        background-image: linear-gradient(to right, 
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
+    
 
     &__text {
+        font-size: 1.5rem;
         
     }
 
+    &>h3 {
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-2rem);
+    }
+
+    
 }
