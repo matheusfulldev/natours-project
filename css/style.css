@@ -275,8 +275,6 @@ body {
 .tours-card {
   background-color: orangered;
   padding: 20rem 10rem; }
-  .tours-card:not(:last-child) {
-    margin-right: 50px; }
 
 .row {
   max-width: 114rem;
