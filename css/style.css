@@ -145,6 +145,21 @@ body {
 .u-mb-bg {
   margin-bottom: 8rem; }
 
+.u-mb-hg {
+  margin-bottom: 12rem; }
+
+.u-mt-sm {
+  margin-top: 1.5rem; }
+
+.u-mt-md {
+  margin-top: 4rem; }
+
+.u-mt-bg {
+  margin-top: 8rem; }
+
+.u-mt-hg {
+  margin-top: 12rem; }
+
 .btn:link, .btn:visited {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -186,6 +201,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn-text:link, .btn-text:visited {
   display: inline-block;
@@ -438,4 +459,4 @@ body {
 
 .tours-section {
   margin-top: -11.2rem;
-  padding: 25rem 0; }
+  padding: 25rem 0 10rem 0; }
