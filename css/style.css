@@ -329,8 +329,21 @@ body {
       .card__heading-span--1 {
         background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(255, 119, 48, 0.9)); }
   .card__details {
-    font-size: 1.8rem;
-    text-align: center; }
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2rem; }
+    .card__details ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto; }
+      .card__details ul li {
+        padding: 2px;
+        width: 60%;
+        border-bottom: 1px solid #dfdfdf; }
+        .card__details ul li:not(:last-child) {
+          margin-bottom: 2.2rem; }
 
 .row {
   max-width: 114rem;
