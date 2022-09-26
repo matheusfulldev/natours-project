@@ -17,7 +17,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        transition: all .8s ease;
+        transition: all .9s ease;
         
         box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
 
@@ -72,15 +72,15 @@
         
         &--2 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-black, 0.65),
-            $color-secondary-dark),
+            rgba($color-black, 0.25),
+            $color-primary-dark),
             url(../img/nat-6.jpg)
         };
 
-        &--2 {
+        &--3 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-black, 0.65),
-            $color-secondary-dark),
+            rgba($color-black, 0.45),
+            $color-tertiary-dark),
             url(../img/nat-7.jpg)
         };
 
@@ -95,18 +95,32 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 45%;
+        width: 75%;
         
         
         &-span {
+            padding: 1rem 1.5rem;
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
-            padding: 1rem 1.5rem;
 
             &--1 {
                 background-image: linear-gradient(to right bottom,
                 rgba($color-secondary-light, .9),
                 rgba($color-secondary-dark, .9)
+                );
+            }
+
+            &--2 {
+                background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, .9),
+                rgba($color-primary-dark, .9)
+                );
+            }
+
+            &--3 {
+                background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, .9),
+                rgba($color-tertiary-dark, .9)
                 );
             }
         }
@@ -155,7 +169,6 @@
             font-size: 1.3rem;
             text-align: center;
             text-transform: uppercase;
-            margin-bottom: 1rem;
         }
 
         &-value {
@@ -163,12 +176,13 @@
             font-size: 7rem;
             font-weight: 100;
             text-align: center;
-            margin-bottom: 5rem;
+            margin-bottom: 6rem;
         }
     }
 
     &__button {
         text-align: center;
+        width: 20rem;
     }
 
 }
