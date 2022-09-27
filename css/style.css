@@ -448,15 +448,18 @@ body {
 
 .section-about {
   background-color: #ececec;
-  padding-top: 25rem;
-  padding-bottom: 17rem;
+  padding: 25rem 0;
   margin-top: -20vh; }
 
 .features-section {
   padding: 20rem 0;
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
-  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%); }
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -8rem; }
+  .features-section > * {
+    transform: skewY(7deg); }
 
 .tours-section {
-  margin-top: -11.2rem;
+  margin-top: -14.2rem;
   padding: 25rem 0 10rem 0; }
