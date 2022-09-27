@@ -55,6 +55,9 @@
     }
 
     &--green {
+      height: 6rem;
+      width: 29rem;
+      line-height: 3rem;
       background-color: $color-primary;
       color: $color-white;
     
@@ -91,4 +94,11 @@
     border-radius: 2px;
     box-shadow: 0 1.5rem 1rem rgba($color-black, 0.1);
   }
+}
+
+.btn--text-md {
+  &:link,
+  &:visited {
+  font-size: 1.85rem;
+}
 }
