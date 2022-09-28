@@ -249,70 +249,6 @@ body {
 .btn--text-md:link, .btn--text-md:visited {
   font-size: 1.85rem; }
 
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 55%;
-    position: absolute;
-    z-index: 1;
-    transition: all .2s;
-    border-radius: 3px;
-    outline-offset: 1rem;
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
-    .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
-      .composition__photo--p1:hover {
-        rotate: -5deg; }
-        .composition__photo--p1:hover:hover {
-          outline: 0.6rem solid #55c57a;
-          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-          border-radius: 5px;
-          z-index: 2;
-          transform: scale(1.15); }
-    .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
-      .composition__photo--p2:hover {
-        rotate: 5deg; }
-        .composition__photo--p2:hover:hover {
-          outline: 0.6rem solid #55c57a;
-          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-          border-radius: 5px;
-          z-index: 2;
-          transform: scale(1.15); }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
-      .composition__photo--p3:hover:hover {
-        outline: 0.6rem solid #55c57a;
-        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        z-index: 2;
-        transform: scale(1.15); }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.94); }
-
-.feature-box {
-  padding: 6rem .3px;
-  border-radius: .4rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
-  text-align: center;
-  transition: all .34s; }
-  .feature-box__icon {
-    font-size: 6rem;
-    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; }
-  .feature-box__text {
-    font-size: 1.5rem; }
-  .feature-box > h3 {
-    text-transform: uppercase; }
-  .feature-box:hover {
-    transform: scale(1.05) translateY(-2rem); }
-
 .card {
   position: relative;
   perspective: 150rem;
@@ -415,6 +351,70 @@ body {
   .card__button {
     text-align: center;
     width: 20rem; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    z-index: 1;
+    transition: all .2s;
+    border-radius: 3px;
+    outline-offset: 1rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+      .composition__photo--p1:hover {
+        rotate: -5deg; }
+        .composition__photo--p1:hover:hover {
+          outline: 0.6rem solid #55c57a;
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          border-radius: 5px;
+          z-index: 2;
+          transform: scale(1.15); }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+      .composition__photo--p2:hover {
+        rotate: 5deg; }
+        .composition__photo--p2:hover:hover {
+          outline: 0.6rem solid #55c57a;
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          border-radius: 5px;
+          z-index: 2;
+          transform: scale(1.15); }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+      .composition__photo--p3:hover:hover {
+        outline: 0.6rem solid #55c57a;
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        z-index: 2;
+        transform: scale(1.15); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.94); }
+
+.feature-box {
+  padding: 6rem .3px;
+  border-radius: .4rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all .34s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box__text {
+    font-size: 1.5rem; }
+  .feature-box > h3 {
+    text-transform: uppercase; }
+  .feature-box:hover {
+    transform: scale(1.05) translateY(-2rem); }
 
 .story {
   width: 75%;
@@ -543,6 +543,7 @@ body {
   background-image: linear-gradient(to right bottom, #68b959, #24a077); }
 
 .book {
+  padding: 5rem;
   height: 50rem;
   background-size: cover;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg); }
