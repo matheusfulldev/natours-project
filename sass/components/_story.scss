@@ -1,20 +1,20 @@
 .story {
-    transform: skew(-12deg);
     width: 75%;
     margin: 0 auto;
     padding: 6rem 9rem;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3rem 6rem rgba($color-black, 0.2);
-    border-radius: 3px;
+    transform: skew(-12deg);
 
     font-size: $default-size;
 
     &__shape {
-        transform: translateX(-3rem) skew(12deg);
         width: 15rem;
         height: 15rem;
         float: left;
-        background-color: orangered;
+        transform: translateX(-3rem) skew(12deg);
+        
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
 
