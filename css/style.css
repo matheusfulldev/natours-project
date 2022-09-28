@@ -416,6 +416,40 @@ body {
   .feature-box:hover {
     transform: scale(1.05) translateY(-2rem); }
 
+.form__input {
+  transition: all .2s;
+  font-size: 1.5rem;
+  font-family: inherit;
+  width: 90%;
+  display: block;
+  color: inherit;
+  border: none;
+  border-bottom: 3.5px solid transparent;
+  border-radius: 2px;
+  padding: 1.5rem 2rem; }
+  .form__input:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 3.5px solid #24a077;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .form__input:focus:invalid {
+    border-bottom: 3.5px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #777; }
+
+.form__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transform: translate(2rem, -1rem);
+  transition: all .5s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(2rem, -5.7rem); }
+
 .story {
   width: 75%;
   margin: 0 auto;
