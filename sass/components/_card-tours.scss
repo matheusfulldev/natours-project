@@ -162,6 +162,7 @@
         width: 90%;
 
         &-box {
+            cursor: default;
             color: white;
         } 
 
@@ -172,7 +173,6 @@
         }
 
         &-value {
-
             font-size: 7rem;
             font-weight: 100;
             text-align: center;
