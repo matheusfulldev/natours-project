@@ -583,7 +583,7 @@ body {
       .footer__about-us--item:not(:last-child) {
         margin-right: 1rem; }
   .footer__copyright {
-    display: inline-block;
+    display: flex;
     border-top: 1px solid #777;
     padding-top: 2rem; }
     .footer__copyright--name:hover, .footer__copyright--course:hover {

@@ -45,13 +45,13 @@
     }
 
     &__copyright {
-        display: inline-block;
+        display: flex;
         border-top: 1px solid $color-gray-dark;
         padding-top: 2rem;
 
         &--name:hover,
         &--course:hover {
-    
+            
             transition: all .2s;
             display: inline-block;
     
