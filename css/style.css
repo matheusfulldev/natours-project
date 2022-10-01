@@ -270,7 +270,8 @@ body {
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  cursor: default; }
   .card__side {
     height: 52rem;
     font-size: 4rem;
