@@ -97,4 +97,51 @@
         width: 100%;
         opacity: 1;
     }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    &__icon::before {
+        position: absolute;
+        top: -.8rem;
+        left: 1.5rem;
+    }
+
+    &__icon::after {
+        position: absolute;
+        top: .8rem;
+        left: 1.5rem;
+    }
+
+    &__icon,
+    &__icon::before,
+    &__icon::after {
+        content: '';
+        display: inline-block;
+        transform: translateX(-50%);
+        width: 3rem;
+        height: 2px;
+        background-color: $color-gray-dark;
+
+        transition: all .3s;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        left: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        left: 0;
+        transform: rotate(-135deg);
+    }
 }
