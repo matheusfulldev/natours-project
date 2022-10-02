@@ -44,7 +44,7 @@
   
   @keyframes buttonOnHover {
     0% {
-      transform: translateY(0);
+      transform: translateY(initial);
     }
   
     100% {
