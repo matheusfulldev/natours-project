@@ -29,15 +29,13 @@
             }
 
             &:hover {
-                transform: rotate(-5deg);
+                @include defaultCompHover;
+                rotate: -5deg;
 
                 @include respond-(tab-port) {
-                    outline: .6rem solid $color-primary;
-                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
-                    border-radius: 5px;
-                    z-index: 20;
+                    @include defaultCompHoverTabPort;
 
-                    transform: scale(1.7) rotate(-5deg);
+                    rotate: -5deg;
                 }
             }
         }
@@ -53,15 +51,12 @@
             }
 
             &:hover {
-                transform: rotate(5deg);
+                @include defaultCompHover;
+                rotate: 5deg;
 
                 @include respond-(tab-port) {
-                    outline: .6rem solid $color-primary;
-                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
-                    border-radius: 5px;
-                    z-index: 20;
-
-                    transform: scale(1.7) rotate(0);
+                    @include defaultCompHoverTabPort;
+                    rotate: 0deg;
                 }
             }
         }
@@ -78,15 +73,11 @@
             }
 
             &:hover {
-                transform: rotate(5deg);
+                @include defaultCompHover;
 
                 @include respond-(tab-port) {
-                    outline: .6rem solid $color-primary;
-                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
-                    border-radius: 5px;
-                    z-index: 20;
-
-                    transform: scale(1.7) rotate(5deg);
+                    @include defaultCompHoverTabPort;
+                    rotate: 5deg;
                 }
             }
         }

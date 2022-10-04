@@ -453,14 +453,19 @@ body {
           z-index: 1;
           transform: scale(1.5); } }
       .composition__photo--p1:hover {
-        transform: rotate(-5deg); }
+        outline: 0.6rem solid #55c57a;
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        transform: scale(1.2);
+        z-index: 20;
+        rotate: -5deg; }
         @media (max-width: 56.25em) {
           .composition__photo--p1:hover {
-            outline: 0.6rem solid #55c57a;
+            outline: 0.4rem solid #55c57a;
             box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.3);
             border-radius: 5px;
+            transform: scale(1.7);
             z-index: 20;
-            transform: scale(1.7) rotate(-5deg); } }
+            rotate: -5deg; } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
@@ -470,14 +475,19 @@ body {
           top: -1rem;
           transform: scale(1.5); } }
       .composition__photo--p2:hover {
-        transform: rotate(5deg); }
+        outline: 0.6rem solid #55c57a;
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        transform: scale(1.2);
+        z-index: 20;
+        rotate: 5deg; }
         @media (max-width: 56.25em) {
           .composition__photo--p2:hover {
-            outline: 0.6rem solid #55c57a;
+            outline: 0.4rem solid #55c57a;
             box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.3);
             border-radius: 5px;
+            transform: scale(1.7);
             z-index: 20;
-            transform: scale(1.7) rotate(0); } }
+            rotate: 0deg; } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
@@ -488,14 +498,18 @@ body {
           z-index: 1;
           transform: scale(1.5); } }
       .composition__photo--p3:hover {
-        transform: rotate(5deg); }
+        outline: 0.6rem solid #55c57a;
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        transform: scale(1.2);
+        z-index: 20; }
         @media (max-width: 56.25em) {
           .composition__photo--p3:hover {
-            outline: 0.6rem solid #55c57a;
+            outline: 0.4rem solid #55c57a;
             box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.3);
             border-radius: 5px;
+            transform: scale(1.7);
             z-index: 20;
-            transform: scale(1.7) rotate(5deg); } }
+            rotate: 5deg; } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.94); }
     @media (max-width: 56.25em) {
