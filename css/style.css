@@ -695,9 +695,15 @@ body {
   background-color: #333;
   font-size: 1.4rem;
   color: #ececec; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
-    margin-top: -7rem; }
+    margin-top: -2rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: -4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -763,6 +769,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 4rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 4rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 4rem) / 2); }
   .row .col-1-of-3 {
