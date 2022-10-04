@@ -5,19 +5,40 @@
         width: 55%;
         position: absolute;
         z-index: 1;
-        transition: all .2s;
+        transition: all .25s;
         border-radius: 3px;
         outline-offset: 1rem;
         box-shadow: 0 2rem 2rem rgba($color-black, 0.4);
+
+        @include respond-(tab-port) {
+            position: relative;
+            float: left;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
 
         
         &--p1 {
             left: 0;
             top: -2rem;
 
+            @include respond-(tab-port) {
+                top: 0;
+                z-index: 1;
+                transform: scale(1.5);
+            }
+
             &:hover {
-                @include defaultCompStyle;
-                rotate: -5deg;
+                transform: rotate(-5deg);
+
+                @include respond-(tab-port) {
+                    outline: .6rem solid $color-primary;
+                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
+                    border-radius: 5px;
+                    z-index: 20;
+
+                    transform: scale(1.7) rotate(-5deg);
+                }
             }
         }
 
@@ -25,9 +46,23 @@
             right: 0;
             top: 2rem;
 
+            @include respond-(tab-port) {
+                z-index: 10;
+                top: -1rem;
+                transform: scale(1.5);
+            }
+
             &:hover {
-                @include defaultCompStyle;
-                rotate: 5deg;
+                transform: rotate(5deg);
+
+                @include respond-(tab-port) {
+                    outline: .6rem solid $color-primary;
+                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
+                    border-radius: 5px;
+                    z-index: 20;
+
+                    transform: scale(1.7) rotate(0);
+                }
             }
         }
 
@@ -35,13 +70,33 @@
             left: 20%;
             top: 10rem;
 
+            @include respond-(tab-port) {
+                top: 1rem;
+                left: -1rem;
+                z-index: 1;
+                transform: scale(1.5);
+            }
+
             &:hover {
-                @include defaultCompStyle;
+                transform: rotate(5deg);
+
+                @include respond-(tab-port) {
+                    outline: .6rem solid $color-primary;
+                    box-shadow: 0 2.5rem 3rem rgba($color-black, .3);
+                    border-radius: 5px;
+                    z-index: 20;
+
+                    transform: scale(1.7) rotate(5deg);
+                }
             }
         }
     }
 
         &:hover &__photo:not(:hover) {
             transform: scale(.94);
+
+            @include respond-(tab-port) {
+                transform: scale(1.2);
+            }
         }
 }
