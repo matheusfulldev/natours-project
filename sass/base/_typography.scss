@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: $color-gray-dark;
-    padding: 3rem;
 }
 
 .heading-primary {
@@ -22,6 +21,21 @@ body {
       animation-name: moveInLeft;
       animation-duration: 1.6s;
       animation-timing-function: ease;
+
+      @include respond-(tab-land) {
+        font-size: 7.5rem;
+        letter-spacing: 2rem;
+      }
+
+      @include respond-(tab-port) {
+        font-size: 7.6rem;
+        letter-spacing: 1.5rem;
+      }
+
+      @include respond-(phone) {
+        font-size: 6rem;
+        letter-spacing: 1.2rem;
+      }
     }
     
     &--sub {
@@ -33,6 +47,21 @@ body {
       animation-name: moveInRight;
       animation-duration: 1.6s;
       animation-timing-function: ease;
+
+      @include respond-(tab-land) {
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+      }
+
+      @include respond-(tab-port) {
+        font-size: 1.8rem;
+        letter-spacing: 1.4rem;
+      }
+
+      @include respond-(phone) {
+        font-size: 1.4rem;
+        letter-spacing: 1.1rem;
+      }
     }
   }
 

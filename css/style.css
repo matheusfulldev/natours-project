@@ -99,22 +99,22 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -129,6 +129,18 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.6s;
     animation-timing-function: ease; }
+    @media (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 7.5rem;
+        letter-spacing: 2rem; } }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 7.6rem;
+        letter-spacing: 1.5rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 6rem;
+        letter-spacing: 1.2rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -137,6 +149,18 @@ body {
     animation-name: moveInRight;
     animation-duration: 1.6s;
     animation-timing-function: ease; }
+    @media (max-width: 75em) {
+      .heading-primary--sub {
+        font-size: 2rem;
+        letter-spacing: 1.5rem; } }
+    @media (max-width: 56.25em) {
+      .heading-primary--sub {
+        font-size: 1.8rem;
+        letter-spacing: 1.4rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 1.4rem;
+        letter-spacing: 1.1rem; } }
 
 .heading-secondary {
   font-size: 3.6rem;
@@ -772,6 +796,10 @@ body {
   background-color: #fff;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 2000; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .navigation__background {
   position: fixed;
@@ -783,6 +811,10 @@ body {
   background-image: radial-gradient(#68b959, #24a077);
   transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   z-index: 1000; }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__nav {
   visibility: hidden;
