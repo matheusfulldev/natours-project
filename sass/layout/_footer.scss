@@ -22,8 +22,16 @@
         display: inline-block;
         list-style: none;
 
-        padding-top: 2rem;
-        border-top: 1px solid $color-gray-dark;
+        &--box {
+            border-top: 1px solid $color-gray-dark;
+            padding-top: 2rem;
+            display: inline-block;
+        
+            @include respond-(tab-port) {
+                width: 100%;
+                text-align: center;
+            }
+        }
 
         &--item {
             display: inline-block;
@@ -48,6 +56,12 @@
         display: flex;
         border-top: 1px solid $color-gray-dark;
         padding-top: 2rem;
+        width: 80%;
+        
+        @include respond-(tab-port) {
+            width: 100%;
+            float: none;
+        }
 
         &--name:hover,
         &--course:hover {
