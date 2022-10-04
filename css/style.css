@@ -1,4 +1,27 @@
 @charset "UTF-8";
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+/*
+              --  37.5em = 600px
+              --  56.25em = 900px
+              --  75em = 1200px
+              --  112.5em = 1800px 
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -70,6 +93,18 @@ html {
   font-size: 62.5%;
   /* 62.5% de 16px
   (padrão do browser) = 10px */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -490,14 +525,14 @@ body {
   .form__button::after {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: inline-block;
     width: 1.3rem;
     height: 1.3rem;
     border-radius: 50%;
     background-color: #55c57a;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: opacity .2s;
     opacity: 0; }
 
@@ -524,6 +559,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     transform: translate(-50%, -50%) scale(0.1);
     width: 75%;
     background-color: #fff;
@@ -610,6 +646,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     transform: translate(-50%, 70%);
     text-transform: uppercase;
     font-size: 1.9rem;
