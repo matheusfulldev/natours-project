@@ -63,16 +63,38 @@
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color-black, .45);
 
-    height: 50rem;
-    background-size: cover;
+    background-size: 100%;
     background-image: linear-gradient(105deg, rgba($color-white, .9) 50%, 
     transparent 50%,
     ),
     url(../img/nat-10.jpg);
 
+    @include respond-(form-break) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 70%, 
+        transparent 70%
+        ),
+        url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+
+    @include respond-(tab-port) {
+        text-align: center;
+        background-image: none;
+        background-color: $color-white;
+    }
+
     &__form {
+        text-align: center;
         width: 50%;
         padding: 6rem; 
+
+        @include respond-(form-break) {
+            width: 70%;
+        }
+
+        @include respond-(tab-port) {
+            width: 100%;
+        }
 
         &::-webkit-input-placeholder {
             color: $color-gray-dark;

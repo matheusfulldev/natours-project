@@ -19,6 +19,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /*
               --  37.5em = 600px
               --  56.25em = 900px
+              --  66.87 = 1070px
               --  75em = 1200px
               --  112.5em = 1800px 
 */
@@ -606,6 +607,9 @@ body {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
   .form__input:focus:invalid {
     border-bottom: 3.5px solid #ff7730; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
 
 .form__label {
   display: block;
@@ -623,6 +627,16 @@ body {
   display: flex;
   justify-content: space-between;
   width: 85%; }
+  @media (max-width: 68em) {
+    .form__radio {
+      width: 90%; } }
+  @media (max-width: 56.25em) {
+    .form__radio {
+      display: block;
+      text-align: left;
+      width: 100%; } }
+  .form__radio-group:not(:last-child) {
+    margin-bottom: 2rem; }
 
 .form__input-radio {
   display: none; }
@@ -743,6 +757,16 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.25);
   transform: skew(-12deg);
   font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 120%;
+      padding: 7rem 9rem;
+      transform: skew(0); } }
+  @media (max-width: 37.5em) {
+    .story {
+      width: 100%;
+      padding: 5rem 7rem;
+      transform: skew(0); } }
   .story:not(:last-child) {
     margin-bottom: 10rem; }
   .story__shape {
@@ -757,6 +781,10 @@ body {
     -moz-clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%); }
+    @media (max-width: 56.25em) {
+      .story__shape {
+        margin: 0 .5rem .5rem 0;
+        transform: translateX(-3rem) skew(0); } }
   .story__photo {
     transition: all .6s ease;
     height: 100%;
@@ -778,6 +806,9 @@ body {
     backface-visibility: hidden; }
   .story__text {
     transform: skew(12deg); }
+    @media (max-width: 56.25em) {
+      .story__text {
+        transform: skew(0); } }
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
@@ -1079,11 +1110,26 @@ body {
 .book {
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.45);
-  height: 50rem;
-  background-size: cover;
+  background-size: 100%;
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg); }
+  @media (max-width: 68em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../img/nat-10.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      text-align: center;
+      background-image: none;
+      background-color: #fff; } }
   .book__form {
+    text-align: center;
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 68em) {
+      .book__form {
+        width: 70%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
     .book__form::-webkit-input-placeholder {
       color: #777; }

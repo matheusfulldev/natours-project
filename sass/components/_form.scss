@@ -28,6 +28,10 @@
             border-bottom: 3.5px solid $color-secondary-dark;
         }
 
+        @include respond-(tab-port) {
+            width: 100%;
+        }
+
         
     }
 
@@ -52,6 +56,24 @@
         justify-content: space-between;
 
         width: 85%;
+
+        @include respond-(form-break) {
+            width: 90%;
+        }
+
+        @include respond-(tab-port) {
+            display: block;
+            text-align: left;
+            width: 100%;
+
+            
+        }
+
+        &-group {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
     }
 
     &__input-radio {
