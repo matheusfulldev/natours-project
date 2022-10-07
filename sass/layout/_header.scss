@@ -5,10 +5,20 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
-      url(../img/hero.jpg);
+      url(../img/hero-small.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(76, 0, 255, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(../img/hero.jpg);
+    }
   
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
