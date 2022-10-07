@@ -13,8 +13,8 @@
         overflow: hidden;
         border-radius: .3rem;
         position: absolute;
-        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         top: 0;
         left: 0;
         width: 100%;
@@ -62,25 +62,28 @@
         background-blend-mode: overlay;
         background-size: cover;
 
+    @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+     }
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-black, 0.65),
+            rgba($color-white, 0.20),
             $color-secondary-dark),
             url(../img/nat-5.jpg)
         }
         
         &--2 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-black, 0.25),
+            rgba($color-white, 0.20),
             $color-primary-dark),
             url(../img/nat-6.jpg)
         };
 
         &--3 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-black, 0.45),
+            rgba($color-white, 0.20),
             $color-tertiary-dark),
             url(../img/nat-7.jpg)
         };
@@ -199,8 +202,11 @@
         &--back {
             margin-top: 2rem;
             transform: rotateY(0);  
+            
+        @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
             -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
             
             &-1 {
             background-image: linear-gradient(to bottom right,
